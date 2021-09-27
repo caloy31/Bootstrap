@@ -27,13 +27,3 @@ body::before {
     height: 100%;
   }
 }
-@media (min-width: 285px) {
-  html,
-  body {
-    font-size: 12px;
-    width: 100%;
-  }
-  #id img {
-    height: 100%;
-  }
-}
