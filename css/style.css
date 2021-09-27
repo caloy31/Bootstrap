@@ -12,18 +12,6 @@ body::before {
 
 @media (min-width: 768px) {
   #maps {
-    width: 100px;
-  }
-}
-@media (max-width: 400px) {
-  html,
-  body {
-    font-size: 12px;
-    height: auto;
-    margin: 0 auto;
-    align-items: center;
-  }
-  #id img {
-    height: 100%;
+    width: 10px;
   }
 }
