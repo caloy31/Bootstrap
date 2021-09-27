@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Frontend Bootcamp</title>
   </head>
   <body>
     <!-- Nav-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand display-2 lead">Carlo Castro</a>
 
@@ -23,21 +23,21 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
+          data-bs-target="#navbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navmenu">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#learn" class="nav-link">About</a>
+              <a href="#int" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#questions" class="nav-link">Location</a>
+              <a href="#learn" class="nav-link">Interest</a>
             </li>
             <li class="nav-item">
-              <a href="#instructors" class="nav-link">Contacts</a>
+              <a href="#con" class="nav-link">Contacts</a>
             </li>
           </ul>
         </div>
@@ -47,6 +47,7 @@
     <!-- Showcase -->
     <section
       class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+      id="about"
     >
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
@@ -74,8 +75,8 @@
         </div>
       </div>
     </section>
-
-    <section class="p-5">
+    <!-- Interest -->
+    <section class="p-5" id="int">
       <div class="container">
         <h2 class="text-center text-dark">Skills & Experience</h2>
         <div class="row text-center g-4">
@@ -182,7 +183,7 @@
     </section>
 
     <!-- Contact & Map -->
-    <section class="p-5">
+    <section class="p-5" id="con">
       <div class="container">
         <div class="row g-4">
           <div class="col-md">
@@ -228,7 +229,11 @@
       </div>
     </footer>
 
-    <script scr="js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
     <script>
       mapboxgl.accessToken =
