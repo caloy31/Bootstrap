@@ -15,3 +15,12 @@ body::before {
     width: 50px;
   }
 }
+@media (max-width: 400px) {
+  html,
+  body {
+    font-size: 12px;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
