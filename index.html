@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <title>Frontend Bootcamp</title>
   </head>
   <body>
@@ -116,23 +121,28 @@
 
     <section id="learn" class="p-5">
       <div class="container">
+        <h2 class="text-center text-dark display-4 lead">Interest</h2>
         <div class="row align-items-center justify-content-between">
           <div class="col-md">
-            <img src="img/fundamentals.svg" class="img-fluid" alt="" />
+            <img src="img/2.svg" class="img-fluid" alt="" />
           </div>
           <div class="col-md p-5">
-            <h2>Learn The Fundamentals</h2>
+            <h2>Personal Website</h2>
             <p class="lead">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Similique deleniti possimus magnam corporis ratione facere!
+              It isn't difficult to create a personal website. Building your own
+              website, on the other hand—the prime piece of real estate that
+              you'll show to the whole internet—a that's different story.
             </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-              reiciendis eius autem eveniet mollitia, at asperiores suscipit
-              quae similique laboriosam iste minus placeat odit velit quos,
-              nulla architecto amet voluptates?
+              That can be a bit frightening. It's easy to get stuck when it
+              comes to planning up your site, choosing the correct color scheme,
+              selecting the right portfolio items, and writing content that
+              gives your pages personality.
             </p>
-            <a href="#" class="btn btn-light mt-3">
+            <a
+              href="https://www.themuse.com/advice/the-35-best-personal-websites-weve-ever-seen"
+              class="btn btn-light mt-3"
+            >
               <i class="bi bi-chevron-right"></i> Read More
             </a>
           </div>
@@ -144,28 +154,91 @@
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md p-5">
-            <h2>Learn React</h2>
+            <h2>Editing Together</h2>
             <p class="lead">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Similique deleniti possimus magnam corporis ratione facere!
+              Today's designs frequently need the collaboration of many
+              specialists with backgrounds in graphic design, animation, and
+              coding. Whether you have two individuals working on a project or
+              two dozen, refining your team design strategy will streamline your
+              procedures and lead to better results.
             </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-              reiciendis eius autem eveniet mollitia, at asperiores suscipit
-              quae similique laboriosam iste minus placeat odit velit quos,
-              nulla architecto amet voluptates?
+              Although the abilities and personalities of your coworkers may
+              have an impact on how your team designs projects, you can usually
+              rely on the methods below to make your job more efficient.
             </p>
-            <a href="#" class="btn btn-light mt-3">
+            <a
+              href="https://www.uxpin.com/studio/blog/effective-design-teamwork/"
+              class="btn btn-light mt-3"
+            >
               <i class="bi bi-chevron-right"></i> Read More
             </a>
           </div>
           <div class="col-md">
-            <img src="img/react.svg" class="img-fluid" alt="" />
+            <img src="img/3.svg" class="img-fluid" alt="" />
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Contact & Map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span> R. Castillo St.
+                Agdao Davao City
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Telephone:</span> 223-4444
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Phone Number:</span> 09456594404
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Personal Email:</span>
+                castrocarlo3126@gmail.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Email:</span>
+                ccastro_200000000215@uic.edu.ph
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">
+          Copyright &copy; 2021 FRONT-END BOOTCAMP. All rights reserved.
+        </p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
     <script scr="js/bootstrap.bundle.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoicmFpc2VyMzEzMiIsImEiOiJja3Uycm81bWgyazlhMm5xbXZsdDRzd3NkIn0.WwTdABrh0j5VyKFViwL13w";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [125.630485, 7.087238],
+        zoom: 14,
+      });
+    </script>
   </body>
 </html>
